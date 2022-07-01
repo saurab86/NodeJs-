@@ -1,0 +1,1 @@
+const EveentEmitter = require('events');

@@ -16,7 +16,7 @@
 // npm i lodash (type in terminal) It will automatically add the lodash dependency in package.json file
 
 // For unistalling node package
-// use npm uninstall pckageName
+// use npm uninstall
 
 const _ = require('lodash')
 
