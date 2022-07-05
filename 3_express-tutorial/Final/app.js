@@ -1,21 +1,18 @@
 const express = require('express')
 const app = express()
+const path = require('path');
 
 app.get('/',(req,res)=>{
-res.status(200).send('Home Page')
+res.sendFile(path.resolve(__dirname,'./index.html'))
 })
 
-app.get('/about',(req,res)=>{
-    res.status(200).send('About Page')
-    })
 
 
 app.all('*',(req,res)=>{
-    res.status(404).send('<h1>resource not found</h1>')
+    res.status(400).send('resoure not found')
 })
 app.listen(5000,()=>{
-   console.log('User hit the server 5000')
+   console.log('User hit the port 5000')
 })
 
 
-// app.get
